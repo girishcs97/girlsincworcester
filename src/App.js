@@ -1,15 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/header/header';
-import LandingPage from './components/landingpage/landingpage';
-import Mission from './components/mission/mission';
+import Header from './components/header/header.js';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './home.jsx'
+import WhoweAre from './components/whowearepage/whowearepage.jsx';
+import FooterComponent from './components/footer/footer.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <LandingPage />
-      <Mission />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/whoweare" element={<WhoweAre />} />
+        </Routes>
+        <FooterComponent />
+      </Router>
     </div>
   );
 }

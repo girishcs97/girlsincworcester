@@ -3,16 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import './header.css'
-import Logo from '../../images/logo-white.svg'
+import { useNavigate } from 'react-router-dom';
+import Logo from '../../images/logo-white.svg';
 
 function Header() {
+  const history = useNavigate();
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#" className='search-btn'>
-            <img src={Logo} />
+        <Navbar.Brand className='search-btn' onClick={() => { history("/") }}>
+            <img src={Logo} alt={'Logo'}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -21,16 +22,10 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" style={{color:'#000000'}}>About Us</Nav.Link>
-            <Nav.Link href="#action2" style={{color:'#000000'}}>News & Events</Nav.Link>
-            <Nav.Link href="#" style={{color:'#000000'}}>
-              Programs
-            </Nav.Link>
-            <Nav.Link href="#" style={{color:'#000000'}}>
-              Support & Volunteer
-            </Nav.Link>
-            <Nav.Link href="#" style={{color:'#000000'}}>
-              Contact Us
+            <Nav.Link style={{color:'#000000'}} onClick={() => { history("/whoweare") }}>Who we are</Nav.Link>
+            <Nav.Link style={{color:'#000000'}}>what we do</Nav.Link>
+            <Nav.Link style={{color:'#000000'}}>
+              Outcomes
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
