@@ -23,8 +23,8 @@ function Header() {
             navbarScroll
           >
             <Nav.Link style={{color:'#000000'}} onClick={() => { history("/whoweare") }}>Who we are</Nav.Link>
-            <Nav.Link style={{color:'#000000'}}>what we do</Nav.Link>
-            <Nav.Link style={{color:'#000000'}}>
+            <Nav.Link style={{color:'#000000'}} onClick={() => { history("/whatwedo") }}>what we do</Nav.Link>
+            <Nav.Link style={{color:'#000000'}} onClick={() => { history("/outcomes") }}>
               Outcomes
             </Nav.Link>
           </Nav>
@@ -41,7 +41,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  );  
 }
 
 export default Header;
