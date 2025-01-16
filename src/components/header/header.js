@@ -25,10 +25,10 @@ function Header() {
           >
             <NavDropdown
               id="nav-dropdown-dark-example"
-              title="Who we are"
+              title="Who We Are"
               menuVariant="dark"
             >
-              <NavDropdown.Item onClick={() => { history("/whoweare") }}>Who we are</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/whoweare") }}>Who We Are</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/billofrights") }}>
                 Our Bill of Rights
               </NavDropdown.Item>
@@ -38,11 +38,21 @@ function Header() {
               <NavDropdown.Item href="#action/3.3">Our Team</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Our Partners</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/whatwedo") }}>what we do</Nav.Link>
-            <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/outcomes") }}>
-              Outcomes
-            </Nav.Link>
+            <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/whatwedo") }}>What We Do</Nav.Link>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Outcomes"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item onClick={() => { history("/outcomes") }}>Outcomes</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/alumnae") }}>
+              Alumnae
+              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/impactstories") }}>Impact Stories</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/researchdata") }}>Research & Data</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
+
           <Form className="d-flex">
             <Nav.Link style={{ color: '#000000', marginRight: '15px' }} onClick={() => { history("/getinvolved") }}>
               Get Involved
