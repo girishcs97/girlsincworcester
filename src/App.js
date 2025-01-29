@@ -15,6 +15,9 @@ import OurFinancials from './components/ourfinancials/ourfinancials.jsx';
 import OurChampions from './components/ourchampions/ourchampions.jsx';
 import ResearchData from './components/researchdata/researchdata.jsx';
 import ImpactStories from './components/impactstories/impactstories.jsx';
+import Programs from './components/programs/programs.jsx';
+import Events from './components/events/events.jsx';
+import AdvocacyEducation from './components/advocacyEducation/advocacyEducation.jsx';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
           <Route path="/billofrights" element={<OurBillofRights />} />
           <Route path="/financials" element={<OurFinancials />} />
           <Route path="/champions" element={<OurChampions />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/advocacyEducation" element={<AdvocacyEducation />} />
         </Routes>
         <FooterComponent />
       </Router>

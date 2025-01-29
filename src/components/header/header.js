@@ -29,25 +29,32 @@ function Header() {
               menuVariant="dark"
             >
               <NavDropdown.Item onClick={() => { history("/whoweare") }}>Who We Are</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => { history("/billofrights") }}>
-                Our Bill of Rights
-              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/billofrights") }}>Our Bill of Rights</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/financials") }}>Our Financials</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/champions") }}>Our Champions</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/history") }}>Our History</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Our Team</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Our Partners</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/whatwedo") }}>What We Do</Nav.Link>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Who We Are"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item onClick={() => { history("/whatwedo") }}>What we do</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/programs") }}>Programs</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/events") }}>Events</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/whatwedo") }}>Our Mission</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/whatwedo") }}>The Girls Inc Experience</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/advocacyEducation") }}>Advocacy & Education</NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown
               id="nav-dropdown-dark-example"
               title="Outcomes"
               menuVariant="dark"
             >
               <NavDropdown.Item onClick={() => { history("/outcomes") }}>Outcomes</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => { history("/alumnae") }}>
-              Alumnae
-              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/alumnae") }}>Alumnae</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/impactstories") }}>Impact Stories</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/researchdata") }}>Research & Data</NavDropdown.Item>
             </NavDropdown>

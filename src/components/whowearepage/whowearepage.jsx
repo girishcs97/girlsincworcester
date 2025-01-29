@@ -149,7 +149,6 @@ function WhoweAre() {
                     </div>
                 </div>
             </div>
-            <GetInvolved />
         </>
     );
 }

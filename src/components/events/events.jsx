@@ -1,38 +1,31 @@
 import React, { useState } from "react";
-import IS from '../../images/impactstories.jpeg'
+import "bootstrap/dist/css/bootstrap.min.css";
+import EventLogo from '../../images/eventlogo.jpg'
 import IS1 from '../../images/impactstories1.jpg'
 import IS2 from '../../images/impactstories2.jpeg'
 import IS3 from '../../images/impactstories3.jpg'
+import NewsletterSignup from "../newslettersignup/newslettersignup";
 
-const ImpactStories = () => {
-    const cardStyle = {
-        borderRadius: '15px',
-        backgroundColor: 'white',
-        padding: '20px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        boxShadow: '8px 8px 0px 0px #eeff41, 0px 4px 30px 0px rgba(0, 0, 0, .2)',
-    };
+
+const Events = () => {
+    const [sortOrder, setSortOrder] = useState("newest");
     const impactStories = [
         {
-            name: "Kelly Thompson",
-            quote: "I can’t imagine what would have happened without Girls Inc. in my life and I am deeply grateful for everything it gave to me.",
+            name: "Fuel Her Fire Auction Gala",
+            quote: "Join Us for the 2025 Fuel Her Fire Auction Gala! We’re excited to announce the return of our signature event, the Fuel Her Fire Auction…",
             image: IS1,
         },
         {
-            name: "Sue Hillsgrove",
-            quote: "Girls Inc. was more than just an after-school program for us; it was our village.",
+            name: "Champions for Girls Breakfast",
+            quote: "A Celebration of Girls Inc. of New Hampshire supporters, donors, volunteers, and the overall success of Girls Inc. NH programs. A separate breakfast celebration will…",
             image: IS2,
         },
         {
-            name: "Kaylee Hubbard",
-            quote: "Being bold helped me foster creativity, create opportunities, and set myself apart from the competition.",
+            name: "Granite State Golf Challenge",
+            quote: "Join us on September 8, 2025, for the Girls Inc. Granite State Golf Challenge at Nashua Country Club’s Wayne Stiles golf course. Your participation supports our mission to empower underserved girls aged 5 to…",
             image: IS3,
         },
     ];
-    const [sortOrder, setSortOrder] = useState("newest");
-
     const sortedStories = [...impactStories];
     if (sortOrder === "oldest") {
         sortedStories.reverse();
@@ -41,15 +34,14 @@ const ImpactStories = () => {
         <>
             <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
                 <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">IMPACT STORIES</span>
+                    <span className="badge bg-warning text-dark mb-2">Events</span>
                     <h1 className="fw-bold">
-                        <span className="text-danger">Girls Inc.</span> is changing the
-                        trajectory of girls’ lives.
+                    Our annual events celebrate <span className="text-danger">remarkable leaders</span> who are helping to create a better future for girls.
                     </h1>
                 </div>
                 <div className="image-section">
                     <img
-                        src={IS}
+                        src={EventLogo}
                         alt="Girls Inc group"
                         className="img-fluid rounded-start"
                         style={{ maxWidth: "600px" }}
@@ -57,8 +49,6 @@ const ImpactStories = () => {
                 </div>
             </div>
             <div className="container text-center mt-5">
-                <h2 className="fw-bold">Impact Stories</h2>
-
                 <div className="mb-3">
                     <label className="fw-bold">Filter By Published Date</label>
                     <select className="form-select w-auto d-inline-block ms-2" onChange={(e) => setSortOrder(e.target.value)}>
@@ -73,8 +63,7 @@ const ImpactStories = () => {
                             <div className="card shadow-sm border-0 rounded">
                                 <img src={story.image} alt={story.name} className="card-img-top rounded-top" />
                                 <div className="card-body">
-                                    <span className="badge bg-warning text-dark mb-2">IMPACT STORIES</span>
-                                    <h5 className="text-danger">Meet {story.name}</h5>
+                                    <h5 className="text-danger">{story.name}</h5>
                                     <p className="text-muted">"{story.quote}"</p>
                                 </div>
                             </div>
@@ -82,8 +71,9 @@ const ImpactStories = () => {
                     ))}
                 </div>
             </div>
+            <NewsletterSignup/>
         </>
     );
 };
 
-export default ImpactStories;
+export default Events;
