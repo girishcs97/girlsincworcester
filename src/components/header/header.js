@@ -38,7 +38,7 @@ function Header() {
             </NavDropdown>
             <NavDropdown
               id="nav-dropdown-dark-example"
-              title="Who We Are"
+              title="Who We Do"
               menuVariant="dark"
             >
               <NavDropdown.Item onClick={() => { history("/whatwedo") }}>What we do</NavDropdown.Item>
@@ -61,9 +61,20 @@ function Header() {
           </Nav>
 
           <Form className="d-flex">
-            <Nav.Link style={{ color: '#000000', marginRight: '15px' }} onClick={() => { history("/getinvolved") }}>
-              Get Involved
-            </Nav.Link>
+          <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Get Involved"
+              className='dropdown-menu-left'
+              menuVariant="dark"
+            >
+              <NavDropdown.Item onClick={() => { history("/getinvolved") }}>Get Involved</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/becomeapartner") }}>Become a Partner</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/championspage") }}>Become a Champion</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/makeagift") }}>Make a Gift</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/volunteers") }}>Become a Volunteer</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/advocacyEducation") }}>Become an Advocate</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => { history("/socialmedia") }}>Become a Social Media Ambassador</NavDropdown.Item>
+            </NavDropdown>  
             <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/") }}>
               Donate
             </Nav.Link>

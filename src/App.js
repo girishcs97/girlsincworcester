@@ -18,10 +18,15 @@ import ImpactStories from './components/impactstories/impactstories.jsx';
 import Programs from './components/programs/programs.jsx';
 import Events from './components/events/events.jsx';
 import AdvocacyEducation from './components/advocacyEducation/advocacyEducation.jsx';
+import Volunteer from './components/volunteer/volunteer.js';
+import SocialMediaSection from './components/socialmedia/socialmedia.js';
+import Makeagift from './components/makeagift/makeagift.jsx';
+import ChampionsForGirls from './components/champion/champion.jsx';
+import PartnershipPage from './components/partners/partners.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">``
       <Router>
         <Header />
         <Routes>
@@ -40,6 +45,11 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/events" element={<Events />} />
           <Route path="/advocacyEducation" element={<AdvocacyEducation />} />
+          <Route path="/volunteers" element={<Volunteer />} />
+          <Route path="/socialmedia" element={<SocialMediaSection />} />
+          <Route path='/makeagift' element={<Makeagift />} />
+          <Route path='/championspage' element={<ChampionsForGirls />} />
+          <Route path='/becomeapartner' element={<PartnershipPage />} />
         </Routes>
         <FooterComponent />
       </Router>

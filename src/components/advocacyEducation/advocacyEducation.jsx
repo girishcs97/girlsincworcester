@@ -11,7 +11,7 @@ const AdvocacyEducation = () => {
                 <div className="text-start">
                     <span className="badge bg-warning text-dark mb-2">Advocacy & Education</span>
                     <h1 className="fw-bold">
-                        <span className="text-danger">Join us</span>and help create the world our girls deserve.
+                        <span className="text-danger">Join us </span>and help create the world our girls deserve.
                     </h1>
                 </div>
                 <div className="image-section">
