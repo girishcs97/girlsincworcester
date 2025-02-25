@@ -1,3 +1,65 @@
 .bg-danger {
-    background-color: #f03a47 !important; /* Custom red color */
+    background-color: #f03a47 !important;
+    /* Custom red color */
+}
+
+.container-p {
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    top: 200px;
+    left: 165px;
+}
+
+.news-title h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: "Lato", sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 14px;
+    font-size: 0.875rem;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    background-color: #eeff41 !important;
+    z-index: 1;
+    padding: 0 1rem;
+    color: #000 !important;
+}
+.news-title p{
+    font-weight: 700 !important;
+    color: #fff;
+    padding: 23px 0 0 2px;
+}
+.signup-btn{
+        transition-property: background-color, color, border-color;
+        transition-duration: .25s, .25s, .25s;
+        transition-timing-function: ease-in, ease-out, ease-in;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        -moz-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px;
+        width: 100%;
+        max-width: 100%;
+        background-color: #ed1849;
+        border: solid 3px #ed1849;
+        color: #fff;
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        user-select: none;
+        box-sizing: border-box;
+        padding: 8px 26px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
 }

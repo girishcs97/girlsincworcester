@@ -13,7 +13,7 @@ function PartnersSection() {
       <Container>
         <Row>
           <Col>
-            <div style={{ display: 'inline-block', backgroundColor: '#fcec00', padding: '5px 15px', borderRadius: '5px', marginBottom: '20px' }}>
+            <div style={{ display: 'inline-block', backgroundColor: '#fcec00', padding: '5px 15px', borderRadius: '6px', marginBottom: '20px' }}>
               <strong>OUR PARTNERS</strong>
             </div>
           </Col>

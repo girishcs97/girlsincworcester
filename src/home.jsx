@@ -16,8 +16,8 @@ const Home = () => {
                 <br/>
                 <Ourstory />
                 <OutcomeSection />
-                <PartnersSection />
                 <GetInvolved />
+                <PartnersSection />
                 
             </div>
         </>

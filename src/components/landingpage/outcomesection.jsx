@@ -14,11 +14,11 @@ const OutcomeSection = () => {
     };
     return (
         <>
-            <div style={{ backgroundColor: '#f03a47', padding: '50px 0', color: 'white' }}>
+            <div style={{ backgroundColor: '#ED1849', padding: '50px 0', color: 'white' }}>
                 <Container className="text-center">
                     <Row>
                         <Col>
-                            <div style={{ marginBottom: '20px', backgroundColor: '#fcec00', color: '#333', padding: '5px 10px', display: 'inline-block', fontWeight: 'bold' }}>
+                            <div style={{ marginBottom: '20px', backgroundColor: '#fcec00', color: '#333', padding: '5px 10px', display: 'inline-block', fontWeight: 'bold', borderRadius: '6px' }}>
                                 OUR OUTCOMES
                             </div>
                             <h2 style={{ fontWeight: 'bold' }}>
@@ -28,14 +28,16 @@ const OutcomeSection = () => {
                             <h2 style={{ fontWeight: 'bold' }}>
                                 They become leaders who will change the world.
                             </h2>
-                            <Button variant="light" style={{ marginTop: '30px', fontWeight: 'bold' }}>
-                                See Our Outcomes →
-                            </Button>
+                            <br/>
+                            <br/>
+                            <a href="#" className="btn btn-light rounded-pill px-4">
+                                See our Outcomes →
+                            </a>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div style={{ backgroundColor: '#f03a47', padding: '50px 0' }}>
+            <div style={{ backgroundColor: '#ED1849', padding: '50px 0' }}>
                 <Container>
                     <Row>
                         {/* Card 1 */}
@@ -47,7 +49,7 @@ const OutcomeSection = () => {
                                     </div>
                                     <Card.Title style={{ fontSize: '3rem', color: '#f03a47', fontWeight: 'bold' }}>89%</Card.Title>
                                     <Card.Text>Of girls say they've been physically active in the past week.</Card.Text>
-                                    <img src={Outcome} alt="Girl" className="rounded-circle" style={{ width: '100px', marginTop: '20px', height:'100px' }} />
+                                    <img src={Outcome} alt="Girl" className="rounded-circle" style={{ width: '100px', marginTop: '20px', height: '100px' }} />
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -61,7 +63,7 @@ const OutcomeSection = () => {
                                     </div>
                                     <Card.Title style={{ fontSize: '3rem', color: '#f03a47', fontWeight: 'bold' }}>90%</Card.Title>
                                     <Card.Text>Of girls believe they will graduate from college.</Card.Text>
-                                    <img src={Outcome} alt="Girl" className="rounded-circle" style={{ width: '100px', marginTop: '20px', height:'100px' }} />
+                                    <img src={Outcome} alt="Girl" className="rounded-circle" style={{ width: '100px', marginTop: '20px', height: '100px' }} />
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -75,7 +77,7 @@ const OutcomeSection = () => {
                                     </div>
                                     <Card.Title style={{ fontSize: '3rem', color: '#f03a47', fontWeight: 'bold' }}>83%</Card.Title>
                                     <Card.Text>Of girls say they can use what they know to solve “real-life” problems in their communities.</Card.Text>
-                                    <img src={Outcome} alt="Girl" className="rounded-circle" style={{ width: '100px', marginTop: '20px', height:'100px' }} />
+                                    <img src={Outcome} alt="Girl" className="rounded-circle" style={{ width: '100px', marginTop: '20px', height: '100px' }} />
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -87,8 +89,6 @@ const OutcomeSection = () => {
                     </div>
                 </Container>
             </div>
-            <br/>
-            <br/>
         </>
     )
 }

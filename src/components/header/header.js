@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './header.css'
 import { useNavigate } from 'react-router-dom';
-import Logo from '../../images/girlsincworcesterlogo.png';
+import Logo from '../../images/logo.png';
 
 function Header() {
   const history = useNavigate();
