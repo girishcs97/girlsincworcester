@@ -23,6 +23,7 @@ import SocialMediaSection from './components/socialmedia/socialmedia.js';
 import Makeagift from './components/makeagift/makeagift.jsx';
 import ChampionsForGirls from './components/champion/champion.jsx';
 import PartnershipPage from './components/partners/partners.jsx';
+import Donate from './components/donate/donate.jsx';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path='/makeagift' element={<Makeagift />} />
           <Route path='/championspage' element={<ChampionsForGirls />} />
           <Route path='/becomeapartner' element={<PartnershipPage />} />
+          <Route path='/donate' element={<Donate />} />
         </Routes>
         <FooterComponent />
       </Router>

@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -72,7 +71,7 @@ function Header() {
               <NavDropdown.Item onClick={() => { history("/advocacyEducation") }}>Become an Advocate</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/socialmedia") }}>Become a Social Media Ambassador</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/") }}>
+            <Nav.Link style={{ color: '#000000' }} onClick={() => {history("/donate") }}>
               Donate
             </Nav.Link>
           </Nav>
