@@ -11,7 +11,6 @@ const Home = () => {
         <>
             <div className="App">
                 <LandingPage />
-                <Mission />
                 <br/>
                 <br/>
                 <Ourstory />

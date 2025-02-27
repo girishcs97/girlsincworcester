@@ -18,12 +18,12 @@ const OutcomeSection = () => {
                 <Container className="text-center">
                     <Row>
                         <Col>
-                            <div style={{ marginBottom: '20px', backgroundColor: '#fcec00', color: '#333', padding: '5px 10px', display: 'inline-block', fontWeight: 'bold', borderRadius: '6px' }}>
+                            <div style={{ marginBottom: '20px', backgroundColor: '#eeff41', color: '#333', padding: '5px 10px', display: 'inline-block', fontWeight: 'bold', borderRadius: '6px' }}>
                                 OUR OUTCOMES
                             </div>
                             <h2 style={{ fontWeight: 'bold' }}>
                                 We help girls gain the knowledge and skills to effect{' '}
-                                <span style={{ color: '#fcec00' }}>positive change</span> in their lives.
+                                <span style={{ color: '#eeff41' }}>positive change</span> in their lives.
                             </h2>
                             <h2 style={{ fontWeight: 'bold' }}>
                                 They become leaders who will change the world.

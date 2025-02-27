@@ -3,27 +3,31 @@ import RD from '../../images/researchdata.jpg'
 import OutcomeImg from '../../images/outcome.jpg'
 import "./ProjectCard.css";
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import RD1 from '../../images/rd1.png';
+import RD2 from '../../images/rd2.png';
+import RD3 from '../../images/rd3.png';
 import NewsletterSignup from "../newslettersignup/newslettersignup";
 
 const ResearchData = () => {
 
-  const projectCards = [
+  const statisticsData = [
     {
-      icon: "📊",
+      icon: RD1,
       title: "The Impact of Girls Inc. on Academic and Behavioral Outcomes",
       link: "#",
     },
     {
-      icon: "💻",
+      icon: RD2,
       title: "Impact Study Executive Summary",
       link: "#",
     },
     {
-      icon: "📝",
+      icon: RD3,
       title: "Lessons from AIR’s Girls Inc. Study: What Helps Girls Thrive",
       link: "#",
     },
   ];
+  
 
   const cardStyle = {
     borderRadius: '15px',
@@ -36,64 +40,78 @@ const ResearchData = () => {
   };
   return (
     <>
-      <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
-        <div className="text-start">
-          <span className="badge bg-warning text-dark mb-2">Research & Data</span>
-          <h1 className="fw-bold">
+      <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
+        {/* Text Section */}
+        <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '15px' }}>
+          <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }} >
+            Research & Data
+          </span>
+          <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
             <span className="text-danger">Measuring outcomes</span> is critical to providing girls with
             the right support and opportunities to thrive.
           </h1>
         </div>
-        <div className="image-section">
+
+        {/* Image Section */}
+        <div className="col-lg-6 position-relative">
           <img
             src={RD}
-            alt="Girls Inc group"
+            alt="Girls Inc"
             className="img-fluid rounded-start"
-            style={{ maxWidth: "600px" }}
+            style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
           />
         </div>
-      </div>
+      </section>
       <div className="container py-5">
         {/* First Section */}
         <div className="text-center my-5">
-          <h2 className="fw-bold">
+          <h3 className="fw-bold">
             Our Approach to Research
-          </h2>
-          <p className="text-muted mt-3">
+          </h3>
+          <br />
+          <p className="text-black mt-3">
             Supported by our use of a network-wide participant management database, Girls Inc.
             also collects annual youth survey data throughout its network of 75 affiliates and
             over 100,000 participants. When we use the latest evidence to drive quality improvement,
             sustainability, and advocacy efforts, we can inspire transformative action to support all
             girls in being Strong, Smart & Bold.
           </p>
-          <h2 className="fw-bold">
+          <br />
+          <br />
+          <h3 className="fw-bold">
             Girls Inc. Network At-A-Glance
-          </h2>
+          </h3>
         </div>
         <br />
 
 
         {/* Second Section */}
         <div className="text-center my-5">
-          <span className="badge bg-warning text-dark mb-3">The Reports</span>
-          <h2 className="fw-bold">
+          <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41" }}>The Reports</span>
+          <h3 className="fw-bold">
             Girls Inc. girls<span className="text-danger"> outperform peers </span>
             on key indicators.
-          </h2>
+          </h3>
           <p className="text-muted mt-3">
             From 2017 to 2019, the American Institutes for Research implemented a quasi-experimental research study with four Girls Inc. affiliates and their school districts in small, medium, and large communities that were reflective of the larger Girls Inc. network.
           </p><p className="text-muted mt-3">The results are truly compelling, documenting with strong evidence that Girls Inc. changes the trajectory of girls’ lives and sets them up for life-long success.
           </p>
-          <div className="horizontal-container">
-            {projectCards.map((card, index) => (
-              <div key={index} className="project-card">
-                <div className="icon">{card.icon}</div>
-                <h3 className="title">{card.title}</h3>
-                <a href={card.link} className="view-report">
-                  View Report <span>🔗</span>
-                </a>
-              </div>
-            ))}
+          <div className="container my-5">
+            <div className="row justify-content-center">
+              {statisticsData.map((card, index) => (
+                <div className="col-md-4 mb-4 d-flex align-items-stretch" key={index}>
+                  <div className="card shadow-sm h-100 text-center" style={{ borderRadius: '15px' }}>
+                    <div className="card-body d-flex flex-column justify-content-between">
+                      <img src={card.icon} className="mb-3 mx-auto" style={{ height: '80px', width: '80px' }} alt={card.title} />
+                      <h5 className="card-title fw-bold">{card.title}</h5>
+                      <a href={card.link} className="btn btn-outline-danger rounded-pill mt-3">
+                        View Report <i className="bi bi-box-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -101,26 +119,23 @@ const ResearchData = () => {
         <div className="bg-danger text-light py-5">
           <div className="container text-center">
             {/* Section Heading */}
-            <span className="badge bg-warning text-dark mb-3">RESEARCH & DATA</span>
+            <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41" }}>RESEARCH & DATA</span>
             <br />
             <br />
-            <h1 className="fw-bold">
-              The <span className="text-warning">Girls Inc. Experience</span> has
-              positive and lasting effects for the girls who participate.
-            </h1>
+            <h2 className="fw-bold">
+              Strong, Smart, and Bold Outcomes Survey
+            </h2>
             <p className="mt-3 fst-italic">
-              “In a rigorous comparison study, we found that girls who participate
-              in the Girls Inc. Experience demonstrated improved academic
-              performance, school-related behaviors, physical activity, and
-              leadership outcomes.” – Dr. Deborah Moroney, Managing Director of the
-              American Institutes for Research
+              Our data-driven continuous improvement cycle includes annual surveying with the Girls Inc. Strong, Smart, and Bold Outcomes Survey (SSBOS) for girls ages 9-18. Our SSBOS looks at more than 30 key indicators of positive development, the outcomes of which are used to inform planning, make improvements in services and programming, underpin operational decisions, and communicate impact.
             </p>
 
             {/* Buttons */}
-            <div className="d-flex justify-content-center gap-3 mt-4">
+            <div className="gap-3 mt-4">
               <a href="#report" className="btn btn-light">
                 Stronger, Smarter, Bolder: Girls Take the Lead Report →
               </a>
+              <br />
+              <br />
               <a href="#data" className="btn btn-light text-danger">
                 Research & Data →
               </a>
@@ -182,7 +197,7 @@ const ResearchData = () => {
           </div>
         </div>
       </div>
-      <NewsletterSignup />
+      <div className="container"><NewsletterSignup /></div>
     </>
   );
 };

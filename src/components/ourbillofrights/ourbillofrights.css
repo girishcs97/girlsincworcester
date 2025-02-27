@@ -1,0 +1,81 @@
+.hover-zoom:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .quote-section {
+    background: #f8f9fa;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .quote-card {
+    background: white;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .quote-icon {
+    font-size: 2rem;
+    color: #ff497c;
+  }
+  .quote-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+  }
+  .quote-author {
+    display: flex;
+    align-items: center;
+  }
+  .author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .author-name {
+    font-weight: bold;
+  }
+  .quote-card {
+    background: white;
+    border-radius: 50%;
+    padding: 50px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .quote-icon {
+    font-size: 2rem;
+    color: #ff497c;
+  }
+  .quote-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  .author-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .author-name {
+    font-weight: bold;
+  }
+  

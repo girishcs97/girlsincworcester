@@ -17,43 +17,46 @@ const Outcome = () => {
     };
     return (
         <>
-            <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
-                <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">OUTCOMES</span>
-                    <h1 className="fw-bold">
-                        <span className="text-danger">Girls Inc.</span> is changing the
-                        trajectory of girls’ lives.
+            <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
+                {/* Text Section */}
+                <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '15px' }}>
+                    <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }} >
+                    OUTCOMES
+                    </span>
+                    <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
+                    <span className="text-danger">Girls Inc.</span> is changing the
+                    trajectory of girls’ lives.
                     </h1>
                 </div>
-                <div className="image-section">
+
+                {/* Image Section */}
+                <div className="col-lg-6 position-relative">
                     <img
                         src={Outcomes}
-                        alt="Girls Inc group"
+                        alt="Girls Inc"
                         className="img-fluid rounded-start"
-                        style={{ maxWidth: "600px" }}
+                        style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
                     />
                 </div>
-            </div>
+            </section>
             <div className="container py-5">
                 {/* First Section */}
                 <div className="text-center my-5">
-                    <span className="badge bg-warning text-dark mb-3">OUTCOMES</span>
-                    <h1 className="fw-bold">
+                    <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41" }}>OUTCOMES</span>
+                    <h2 className="fw-bold">
                         <span className="text-danger">Powerful</span> Outcomes for Powerful Girls
-                    </h1>
-                    <p className="text-muted mt-3">
+                    </h2>
+                    <p className="text-black mt-3">
                         Our outcomes demonstrate that with the right opportunities to grow and
-                        learn, girls’ realities are transformed. We equip girls to disrupt the
+                        learn, girls’ realities are transformed. We equip <br/> girls to disrupt the
                         status quo and ensure they have equal opportunities to take their places
                         as the leaders they are.
                     </p>
                 </div>
                 <br />
-                <br />
-                <br />
                 {/* Second Section */}
                 <div className="text-center my-5">
-                    <span className="badge bg-warning text-dark mb-3">WHERE ARE THEY NOW?</span>
+                    <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41" }}>WHERE ARE THEY NOW?</span>
                     <h2 className="fw-bold">
                         <span className="text-danger">Hear from Alumnae</span> on how Girls Inc.
                         prepared them for college, the workforce, and beyond.
@@ -74,13 +77,13 @@ const Outcome = () => {
             <div className="bg-danger text-light py-5">
                 <div className="container text-center">
                     {/* Section Heading */}
-                    <span className="badge bg-warning text-dark mb-3">RESEARCH & DATA</span>
+                    <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41" }}>RESEARCH & DATA</span>
                     <br />
                     <br />
-                    <h1 className="fw-bold">
+                    <h2 className="fw-bold">
                         The <span className="text-warning">Girls Inc. Experience</span> has
                         positive and lasting effects for the girls who participate.
-                    </h1>
+                    </h2>
                     <p className="mt-3 fst-italic">
                         “In a rigorous comparison study, we found that girls who participate
                         in the Girls Inc. Experience demonstrated improved academic
@@ -90,10 +93,12 @@ const Outcome = () => {
                     </p>
 
                     {/* Buttons */}
-                    <div className="d-flex justify-content-center gap-3 mt-4">
+                    <div className="gap-3 mt-4">
                         <a href="#report" className="btn btn-light">
                             Stronger, Smarter, Bolder: Girls Take the Lead Report →
                         </a>
+                        <br/>
+                        <br/>
                         <a href="#data" className="btn btn-light text-danger">
                             Research & Data →
                         </a>
@@ -168,7 +173,7 @@ const Outcome = () => {
                             className="rounded-circle"
                             style={{ width: '50px', height: '50px', marginRight: '0.5rem' }}
                         />
-                        <span className="badge bg-warning text-dark fw-bold">DAKOTA</span>
+                        <span className="badge text-dark fw-bold" style={{ backgroundColor: "#eeff41" }}>DAKOTA</span>
                     </div>
                 </div>
             </div>

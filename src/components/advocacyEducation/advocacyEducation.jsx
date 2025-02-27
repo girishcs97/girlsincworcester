@@ -7,30 +7,35 @@ const AdvocacyEducation = () => {
 
     return (
         <>
-            <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
-                <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">Advocacy & Education</span>
-                    <h1 className="fw-bold">
+            <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
+                {/* Text Section */}
+                <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '15px' }}>
+                    <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }} >
+                        Advocacy & Education
+                    </span>
+                    <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
                         <span className="text-danger">Join us </span>and help create the world our girls deserve.
                     </h1>
                 </div>
-                <div className="image-section">
+
+                {/* Image Section */}
+                <div className="col-lg-6 position-relative">
                     <img
                         src={AlumnaeImg}
-                        alt="Girls Inc group"
+                        alt="Girls Inc"
                         className="img-fluid rounded-start"
-                        style={{ maxWidth: "600px" }}
+                        style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
                     />
                 </div>
-            </div>
-            <Container className="text-center py-5">
+            </section>
+            <Container className="container text-center py-5">
                 <Row>
                     <Col>
-                        <h1>
+                        <h2 className="fw-bold">
                             Become an <span style={{ color: "#ff3366" }}>advocate for girls</span> and
                             speak up on their behalf.
-                        </h1>
-                        <p className="mt-4">
+                        </h2>
+                        <p className="mt-4 fw-bold">
                             Girls Inc. knows that democracy is stronger when more voices are heard
                             and everyone is engaged.
                         </p>
@@ -41,16 +46,17 @@ const AdvocacyEducation = () => {
                         <Button
                             href="#"
                             variant="danger"
-                            size="lg"
-                            className="mt-3"
-                            style={{ borderRadius: "30px" }}
+                            size="md"
+                            className="mt-3 fw-bold"
+                            style={{ borderRadius: "30px",backgroundColor: '#ED1849'  }}
                         >
                             National Become An Advocate →
                         </Button>
                     </Col>
                 </Row>
             </Container>
-            <NewsletterSignup />
+            <div className="container"><NewsletterSignup /></div>
+
         </>
     );
 };

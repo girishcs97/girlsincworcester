@@ -26,7 +26,7 @@ import PartnershipPage from './components/partners/partners.jsx';
 
 function App() {
   return (
-    <div className="App">``
+    <div className="App">
       <Router>
         <Header />
         <Routes>

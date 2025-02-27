@@ -7,6 +7,7 @@ import BillRights from '../../images/billrights.png';
 import Champions from '../../images/champions.png';
 import History from '../../images/history.png';
 import Partners from '../../images/partners.png';
+import GetInvolved from './getinvolved';
 
 
 function WhoweAre() {
@@ -62,27 +63,31 @@ function WhoweAre() {
     ];
     return (
         <>
-            <div className="container-fluid">
-                <div className="row align-items-center" style={{backgroundColor:'#f4f4ef'}}>
-                    {/* Left Side: Text Content */}
-                    <div className="col-md-6 text-section">
-                        <span className="badge bg-warning text-dark">WHO WE ARE</span>
-                        <br/>
-                        <br/>
-                        <h2 style={{fontWeight:'bold'}}>
-                            <span className="text-danger">Girls Inc.</span> is the preeminent
-                            girls’ leadership organization equipping girls to reach their full potential.
-                        </h2>
-                    </div>
-
-                    {/* Right Side: Curved Image */}
-                    <div className="col-md-6` image-section">
-                        <img src={WhoweareLogo} alt="Girls Inc" className="curved-image" />
-                    </div>
+            <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{backgroundColor:'#f4f4ef'}}>
+                {/* Text Section */}
+                <div className="col-lg-6 text-center text-lg-start" style={{marginLeft:'15px'}}>
+                    <span className="badge text-dark px-3 py-1" style={{backgroundColor:"#eeff41"}}>
+                        WHO WE ARE
+                    </span>
+                    <h1 className="mt-4 fw-bold" style={{fontSize:'36px'}}>
+                        <span className="text-danger">Girls Inc.</span> is the preeminent
+                        girls’ leadership organization equipping girls to reach their full
+                        potential.
+                    </h1>
                 </div>
-            </div>
-            <div className="container text-center py-5">
-                <span className="badge bg-warning text-dark fw-bold px-3 py-2">OUR STORY</span>
+
+                {/* Image Section */}
+                <div className="col-lg-6 position-relative">
+                    <img
+                        src={WhoweareLogo}
+                        alt="Girls Inc"
+                        className="img-fluid rounded-start"
+                        style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
+                    />
+                </div>
+            </section>
+            <div className="container text-center py-5  ">
+                <span className="badge text-dark fw-bold px-3 py-2" style={{backgroundColor:"#eeff41"}}>OUR STORY</span>
                 <h2 className="mt-3">
                     <span className="text-danger fw-bold">Working with and on behalf of girls for 50 years </span>
                     <span className="fw-bold">has given us unparalleled knowledge and expertise.</span>
@@ -100,7 +105,7 @@ function WhoweAre() {
                                     <img src={card.imgSrc} className="card-img-top zoom-img" alt={card.title} />
                                 </div>
                                 <div className="card-body">
-                                    <span className="badge bg-warning text-dark fw-bold mb-2">{card.category}</span>
+                                    <span className="badge text-dark fw-bold mb-2" style={{backgroundColor:"#eeff41"}}x>{card.category}</span>
                                     <h5 className="fw-bold">{card.title}</h5>
                                     <p className="text-muted">{card.description}</p>
                                     <a href="#" className="btn btn-danger rounded-pill px-4">
@@ -111,6 +116,9 @@ function WhoweAre() {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className='container'>
+                <GetInvolved />
             </div>
         </>
     );

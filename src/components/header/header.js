@@ -58,10 +58,7 @@ function Header() {
               <NavDropdown.Item onClick={() => { history("/impactstories") }}>Impact Stories</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/researchdata") }}>Research & Data</NavDropdown.Item>
             </NavDropdown>
-          </Nav>
-
-          <Form className="d-flex">
-          <NavDropdown
+            <NavDropdown
               id="nav-dropdown-dark-example"
               title="Get Involved"
               className='dropdown-menu-left'
@@ -74,10 +71,13 @@ function Header() {
               <NavDropdown.Item onClick={() => { history("/volunteers") }}>Become a Volunteer</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/advocacyEducation") }}>Become an Advocate</NavDropdown.Item>
               <NavDropdown.Item onClick={() => { history("/socialmedia") }}>Become a Social Media Ambassador</NavDropdown.Item>
-            </NavDropdown>  
+            </NavDropdown>
             <Nav.Link style={{ color: '#000000' }} onClick={() => { history("/") }}>
               Donate
             </Nav.Link>
+          </Nav>
+
+          <Form className="d-flex">
           </Form>
         </Navbar.Collapse>
       </Container>

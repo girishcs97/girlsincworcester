@@ -23,56 +23,86 @@ const Card = ({ imgSrc, title, description, btnText, btnLink }) => {
 };
 
 const Volunteer = () => {
+    const statisticsData = [
+        {
+            title: 'Corporate Engagement Opportunities',
+            description: 'Support us through corporate and community engagement.',
+            image: Volunteer1,
+            link: '#',
+            buttonText: 'Sign Up',
+            buttonIcon: 'bi bi-box-arrow-up-right'
+        },
+        {
+            title: 'Become a Volunteer or Intern',
+            description: 'Working directly with girls in our programs of girlsinWorcester.',
+            image: Volunteer2,
+            link: '#',
+            buttonText: 'Sign Up',
+            buttonIcon: 'bi bi-box-arrow-up-right'
+        },
+        {
+            title: 'Event Committees',
+            description: 'Provide support at our events or join one of our event committees.',
+            image: Volunteer3,
+            link: '#',
+            buttonText: 'Contact Us',
+            buttonIcon: 'bi bi-envelope'
+        }
+    ];
 
     return (
         <>
-            <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
-                <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">VOLUNTEERS</span>
-                    <h1 className="fw-bold">
+            <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
+                {/* Text Section */}
+                <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '15px' }}>
+                    <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }} >
+                        VOLUNTEERS
+                    </span>
+                    <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
                         <span className="text-danger">Join us</span> in providing girls with the opportunity to thrive every day..
                     </h1>
                 </div>
-                <div className="image-section">
+
+                {/* Image Section */}
+                <div className="col-lg-6 position-relative">
                     <img
                         src={Volunteers}
-                        alt="Girls Inc group"
+                        alt="Girls Inc"
                         className="img-fluid rounded-start"
-                        style={{ maxWidth: "600px" }}
+                        style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
                     />
                 </div>
-            </div>
+            </section>
             <div className="container text-center my-5">
-                <p className="lead">
+                <p className="lead fw-bold">
                     The impact of volunteering at Girls Inc. of New Hampshire extends far beyond immediate interactions;
-                    it plants seeds of empowerment, leadership, and resilience that have the potential to shape futures
+                    it plants seeds of <br />empowerment, leadership, and resilience that have the potential to shape futures
                     and create lasting change.
                 </p>
-                <div className="row">
-                    <Card
-                        imgSrc={Volunteer1}
-                        title="Corporate Engagement Opportunities"
-                        description="Support us through corporate and community engagement."
-                        btnText="Sign Up"
-                        btnLink="#"
-                    />
-                    <Card
-                        imgSrc={Volunteer2}
-                        title="Become a Volunteer or Intern"
-                        description="Working directly with girls in our programs."
-                        btnText="Sign Up"
-                        btnLink="#"
-                    />
-                    <Card
-                        imgSrc={Volunteer3}
-                        title="Event Committees"
-                        description="Provide support at our events or join one of our event committees."
-                        btnText="Contact Us"
-                        btnLink="#"
-                    />
+                <br />
+                <div className="container my-5">
+                    <div className="row justify-content-center">
+                        {statisticsData.map((card, index) => (
+                            <div className="col-md-4 mb-4 d-flex align-items-stretch" key={index}>
+                                <div className="card shadow-sm h-100 text-center" style={{ borderRadius: '15px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
+                                    <img src={card.image} className="card-img-top" style={{ borderTopLeftRadius: '15px', borderTopRightRadius: '15px', height: '200px', objectFit: 'cover' }} alt={card.title} />
+                                    <div className="card-body d-flex flex-column justify-content-between">
+                                        <h5 className="card-title fw-bold">{card.title}</h5>
+                                        <br/>
+                                        <p className="card-text">{card.description}</p>
+                                        <br/>
+                                        <a href={card.link} className="btn btn-outline-danger rounded-pill mt-3">
+                                            {card.buttonText} <i className={card.buttonIcon}></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-            <NewsletterSignup />
+            <div className='container'><NewsletterSignup /></div>
+
         </>
     )
 }

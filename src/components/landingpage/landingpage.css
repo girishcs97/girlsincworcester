@@ -63,4 +63,54 @@
     left: -10px;
     top: -10px;
   }
+  .button-container {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .filled-button {
+    background-color: #e40046;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filled-button:hover {
+    background-color: #c3003b;
+  }
+  
+  .outlined-button {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #e40046;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .outlined-button:hover {
+    background-color: rgba(228, 0, 70, 0.1);
+    border-color: #c3003b;
+  }
+  
+  .arrow {
+    margin-left: 5px;
+  }
+  
+  .play-icon {
+    color: #e40046;
+  }
+  
   

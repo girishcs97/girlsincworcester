@@ -5,37 +5,42 @@ import Event1 from '../../images/event1.png';
 import NewsletterSignup from "../newslettersignup/newslettersignup";
 
 const Alumnae = () => {
-    
+
     return (
         <>
-            <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
-                <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">Girls Inc. Alumnae Association</span>
-                    <h1 className="fw-bold">
+            <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
+                {/* Text Section */}
+                <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '15px' }}>
+                    <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }} >
+                        Girls Inc. Alumnae Association
+                    </span>
+                    <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
                         A dynamic network of incredible alums who have been part of <span className="text-danger">Girls Inc.</span>
                     </h1>
                 </div>
-                <div className="image-section">
+
+                {/* Image Section */}
+                <div className="col-lg-6 position-relative">
                     <img
                         src={AlumnaeImg}
-                        alt="Girls Inc group"
+                        alt="Girls Inc"
                         className="img-fluid rounded-start"
-                        style={{ maxWidth: "600px" }}
+                        style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
                     />
                 </div>
-            </div>
+            </section>
             <div className="container py-5">
                 {/* First Section */}
                 <div className="text-center my-5">
-                    <span className="badge bg-warning text-dark mb-3">ALUMNAE</span>
+                    <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41" }}>ALUMNAE</span>
                     <h3 className="fw-bold">
-                        Launched in 2022, the <span className="text-danger">Girls Inc. Alumnae Association</span> is designed specifically for individuals across the US and Canada who participated in Girls Inc. programming including those from Girls Clubs of America before 1990.
+                        Launched in 2022, the <span className="text-danger">Girls Inc. Alumnae Association</span> is <br />designed specifically for individuals across the US and <br />Canada who participated in Girls Inc. programming <br />including those from Girls Clubs of America before 1990.
                     </h3>
-                    <p className="text-muted mt-3">
-                        <strong>A continuation of the Girls Inc. Experience, the free Alumnae Association</strong> is open to alums and high school seniors, ages 18 and over. Members gain invaluable career advice, engage in inspirational conversations with trailblazing women leaders, and benefit from many other opportunities to continue to unlock their fullest potential!
+                    <p className="text-black mt-3">
+                        <strong>A continuation of the Girls Inc. Experience, the free Alumnae Association</strong> is open to alums and high school seniors, ages <br />18 and over. Members gain invaluable career advice, engage in inspirational conversations with trailblazing women leaders, <br />and benefit from many other opportunities to continue to unlock their fullest potential!
                     </p>
                 </div>
-                <br/>
+                <br />
                 {/* Second Section */}
             </div>
             <div className="container text-center">
@@ -63,7 +68,7 @@ const Alumnae = () => {
                 </p>
 
                 <div className="row mt-4">
-                <div className="col-md-2">
+                    <div className="col-md-2">
                     </div>
                     <div className="col-md-2">
                         <img src={Event1} alt="Event 1" className="img-fluid rounded" />
@@ -79,8 +84,9 @@ const Alumnae = () => {
                     </div>
                 </div>
             </div>
-            <br/>
-            <NewsletterSignup />
+            <br />
+            <div className="container"><NewsletterSignup /></div>
+
         </>
     );
 };

@@ -11,13 +11,13 @@ const GetInvolved = () => {
         <>
             <div className="d-flex flex-column align-items-center text-center text-white py-5" style={{ backgroundColor: '#ED1849' }}>
                 {/* Header Label */}
-                <div style={{ marginBottom: '20px', backgroundColor: '#fcec00', color: '#333', padding: '5px 10px', display: 'inline-block', fontWeight: 'bold', borderRadius: '6px' }}>
-                    GET INVOLVED
-                </div>
+                <span className="badge text-dark px-3 py-1" style={{backgroundColor:"#eeff41"}}>
+                        GET INVOLVED
+                    </span>
                 <br/>
                 {/* Main Text */}
-                <h2 className="font-weight-bold">
-                    <span className="text-warning">Stand with girls.</span> Your generosity shows
+                <h2 className="fw-bold">
+                    <span style={{color:'#eeff41'}}>Stand with girls.</span> Your generosity shows
                     girls you believe in them and their potential.
                 </h2>
                 <br />

@@ -4,12 +4,14 @@ import WhoweAre from '../../images/whowearee.png'
 
 const Ourstory = () => {
     return (<>
-        <div className="container-fluid bg-light lead">
+        <div className="container-fluid lead">
             <div className="py-5 text-center">
-                <h5 className="text-uppercase fw-bold text-warning">Our Story</h5>
+            <span className="badge text-dark px-3 py-1" style={{backgroundColor:"#eeff41"}}>
+                        OUR STORY
+                    </span>
                 <br />
                 <br />
-                <h1 className="fw-bold">We’re building a <span className='text-danger'>new generation</span> of strong, smart, and bold leaders.</h1>
+                <h2 className="fw-bold">We’re building a <span className='text-danger'>new generation</span> of strong, smart, and bold leaders.</h2>
             </div>
         </div>
         <div className="container my-5">

@@ -6,37 +6,41 @@ import Diff1 from '../../images/diff1.jpg'
 import Dakota from '../../images/dakota.jpg'
 import DonationImg from '../../images/donationImage.jpg'
 import Diff2 from '../../images/diff2.jpg'
+import NewsletterSignup from '../newslettersignup/newslettersignup';
 
 function GetInvolved() {
     return (
         <>
-            <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
-                <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">GET INVOLVED</span>
-                    <h1 className="fw-bold">
+            <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
+                {/* Text Section */}
+                <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '15px' }}>
+                    <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }} >
+                        GET INVOLVED
+                    </span>
+                    <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
                         <span className="text-danger">Join Girls Inc.</span>in building the new generation of leaders.
                     </h1>
                 </div>
-                <div className="image-section">
+
+                {/* Image Section */}
+                <div className="col-lg-6 position-relative">
                     <img
                         src={GetInvolvedLogo}
-                        alt="Girls Inc group"
+                        alt="Girls Inc"
                         className="img-fluid rounded-start"
-                        style={{ maxWidth: "600px" }}
+                        style={{ clipPath: "ellipse(90% 100% at 100% 50%)" }}
                     />
                 </div>
-            </div>
+            </section>
             <div className="text-center" style={{ backgroundColor: '#f8f9fa', padding: '40px' }}>
                 <div className="container">
                     {/* Heading Section */}
-                    <button className="btn btn-warning text-uppercase mb-3" style={{ fontWeight: 'bold', color: 'black' }}>
-                        Make a Difference
-                    </button>
-                    <h2 className="mb-3">
-                        Whether it is through financial contributions, volunteering, advocacy, or many other ways, <span className="text-danger">you can support girls.</span>
+                    <span className="badge text-dark mb-3" style={{ backgroundColor: "#eeff41", fontSize: '20px' }}> MAKE A DIFFERENCE</span>
+                    <h2 className="mb-3 fw-bold">
+                        Whether it is through financial contributions, <br />volunteering, advocacy, or many other ways, <span className="text-danger">you can <br />support girls.</span>
                     </h2>
-                    <p className="text-muted mb-5">
-                        You can help to create a more equitable world where they can break barriers, achieve their goals, and tap into their fullest potential.
+                    <p className="text-black mb-5">
+                        <span className='fw-bold'>You can help to create a more equitable world</span> where they can break barriers, achieve their goals, and tap into their fullest potential.
                     </p>
 
                     {/* Card Section */}
@@ -104,11 +108,11 @@ function GetInvolved() {
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between align-items-center bg-danger text-white p-5 rounded">
                 <div className="col-md-6 text-center text-md-start">
-                    <button className="btn btn-warning text-uppercase fw-bold mb-3">
+                    <button className="btn text-black text-uppercase fw-bold mb-3"  style={{ backgroundColor: "#eeff41" }}>
                         Make a Donation
                     </button>
                     <h2>
-                        <span className="text-warning fw-bold">86¢</span> of every dollar
+                        <span className="fw-bold" style={{ color: "#eeff41" }}>86¢</span> of every dollar
                         spent
                     </h2>
                     <h3 className="fw-bold">goes directly to programming for girls.</h3>
@@ -124,22 +128,30 @@ function GetInvolved() {
                     <div className="">
                         <img
                             src={DonationImg}
-                            alt="Girls Inc."
-                            className="img-fluid w-50 h-50"
+                            alt="Girls Inc"
+                            className="rounded-circle img-fluid"
+                            style={{
+                                width: "300px",
+                                height: "300px",
+                                objectFit: "cover"
+                            }}
                         />
                     </div>
                 </div>
             </div>
             <div className="container my-5 text-center">
-                <button className="btn btn-warning text-uppercase fw-bold mb-3 px-4">
+                <button className="btn text-uppercase fw-bold mb-3 px-4" style={{ backgroundColor: "#eeff41" }}>
                     Other Ways to Get Involved
                 </button>
                 <h2 className="fw-bold">
                     Be a part of the <span className="text-danger">Girls Inc.</span> community.
                 </h2>
+                <br/>
                 <p className="fw-semibold mt-3 mb-5">
-                    <span className="text-dark">There are many ways you can help</span> advance the work of Girls Inc. and help achieve our vision of powerful girls in an equitable society.
+                    <span className="text-dark">There are many ways you can help</span> advance the work of Girls Inc. and help achieve our vision of powerful girls in <br/>an equitable society.
                 </p>
+                <br/>
+                <br/>
 
                 <div className="row g-4">
                     {/* Card 1 */}
@@ -166,7 +178,7 @@ function GetInvolved() {
                             </div>
                             <h5 className="fw-bold">Become A Volunteer</h5>
                             <p className="text-muted">
-                                Volunteers make our work possible.
+                                Volunteers make our work possible in easiest way possible.
                             </p>
                             <a href="#volunteer" className="btn btn-outline-danger fw-bold">
                                 Become a Volunteer <span className="ms-1">&rarr;</span>
@@ -205,9 +217,12 @@ function GetInvolved() {
                             className="rounded-circle"
                             style={{ width: '50px', height: '50px', marginRight: '0.5rem' }}
                         />
-                        <span className="badge bg-warning text-dark fw-bold">Julie</span>
+                        <span className="badge text-dark fw-bold" style={{ backgroundColor: "#eeff41" }}>Julie</span>
                     </div>
                 </div>
+            </div>
+            <div className='container'>
+                <NewsletterSignup/>
             </div>
         </>
     );
