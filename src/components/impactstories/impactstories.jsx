@@ -6,15 +6,7 @@ import IS3 from '../../images/impactstories3.jpg'
 import NewsletterSignup from "../newslettersignup/newslettersignup";
 
 const ImpactStories = () => {
-    const cardStyle = {
-        borderRadius: '15px',
-        backgroundColor: 'white',
-        padding: '20px',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        boxShadow: '8px 8px 0px 0px #eeff41, 0px 4px 30px 0px rgba(0, 0, 0, .2)',
-    };
+    
     const cardsData = [
         {
             name: "Kelly Thompson",

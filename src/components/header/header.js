@@ -59,6 +59,13 @@ function Header() {
             </NavDropdown>
             <NavDropdown
               id="nav-dropdown-dark-example"
+              title="Rentals"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item onClick={() => { history("/rentals") }}>Rentals</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
               title="Get Involved"
               className='dropdown-menu-left'
               menuVariant="dark"
