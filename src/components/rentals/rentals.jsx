@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import Img from '../../images/camp.JPG'
+import MultiPHall from '../../images/MultipurposeHall.jpg'
+import Pool from '../../images/Pool.HEIC'
 
 const spaces = [
   {
@@ -9,7 +11,7 @@ const spaces = [
     capacity: 'Up to 250 guests',
     rates: 'Starting at $600',
     description: 'A bright, welcoming space with natural light and a flexible layout. Perfect for corporate gatherings, workshops, group activities, and birthday parties.',
-    image: Img
+    image: MultiPHall
   },
   {
     name: 'Conference Room',
@@ -44,7 +46,7 @@ const spaces = [
     capacity: '50 guests',
     rates: '$125 per hour',
     description: 'Temperature-controlled pool with lifeguard included for up to 25 guests.',
-    image: Img
+    image: Pool
   },
   {
     name: 'Camp Kinneywood',
@@ -86,6 +88,7 @@ function Rentals() {
       </Row>
 
       <footer className="text-center mt-5">
+        <p>Participant families receive 50% off bookings</p>
         <p>Non-profit organizations enjoy a 25% discount on all rentals.</p>
         <p>
           Contact us at <a href="mailto:ldankwa@girlsincworcester.org">ldankwa@girlsincworcester.org</a> or call 508-755-6455.

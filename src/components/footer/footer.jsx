@@ -13,10 +13,10 @@ function FooterComponent() {
             <br/>
             <div className="row mb-3">
               <div className="col-lg-12">
-                <a href="#" className="text-white mx-2"><FaFacebookF size={24} /></a>
-                <a href="#" className="text-white mx-2"><FaInstagram size={24} /></a>
-                <a href="#" className="text-white mx-2"><FaLinkedinIn size={24} /></a>
-                <a href="#" className="text-white mx-2"><FaYoutube size={24} /></a>
+                <a href="https://www.facebook.com/girlsincofworcester" target="_blank" className="text-white mx-2"><FaFacebookF size={24} /></a>
+                <a href="https://www.instagram.com/girlsincworcester/" target="_blank" className="text-white mx-2"><FaInstagram size={24} /></a>
+                <a href="https://www.linkedin.com/company/girls-inc-of-worcester/" target="_blank" className="text-white mx-2"><FaLinkedinIn size={24} /></a>
+                <a href="https://www.youtube.com/@girlsinc.ofworcester6433" target="_blank" className="text-white mx-2"><FaYoutube size={24} /></a>
               </div>
             </div>
           </div>

@@ -60,6 +60,8 @@ function WhoweAre() {
             description: "Girls Inc. is an advocate for girls and honors the Girls Inc. Bill of Rights as part of our continued commitment",
             buttonText: "Our Bill of Rights →",
         },
+        
+
     ];
     return (
         <>
