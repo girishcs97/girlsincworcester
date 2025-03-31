@@ -37,7 +37,7 @@ function Header() {
             </NavDropdown>
             <NavDropdown
               id="nav-dropdown-dark-example"
-              title="Who We Do"
+              title="What We Do"
               menuVariant="dark"
             >
               <NavDropdown.Item onClick={() => { history("/whatwedo") }}>What we do</NavDropdown.Item>
