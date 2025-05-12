@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Outcome from '../../images/outcome.jpg'
+import { useNavigate } from 'react-router-dom';
+
 
 const OutcomeSection = () => {
+    const history = useNavigate();
     const cardStyle = {
         borderRadius: '15px',
         backgroundColor: 'white',
@@ -30,8 +33,8 @@ const OutcomeSection = () => {
                             </h2>
                             <br/>
                             <br/>
-                            <a href="#" className="btn btn-light rounded-pill px-4">
-                                See our Outcomes →
+                            <a onClick={() => { history("/outcomes") }} className="btn btn-light rounded-pill px-4 fw-bold">
+                                See Our Outcomes →
                             </a>
                         </Col>
                     </Row>

@@ -9,23 +9,6 @@ import NewsletterSignup from "../newslettersignup/newslettersignup";
 
 const Events = () => {
     const [sortOrder, setSortOrder] = useState("newest");
-    const impactStories = [
-        {
-            name: "Fuel Her Fire Auction Gala",
-            quote: "Join Us for the 2025 Fuel Her Fire Auction Gala! We’re excited to announce the return of our signature event, the Fuel Her Fire Auction…",
-            image: IS1,
-        },
-        {
-            name: "Champions for Girls Breakfast",
-            quote: "A Celebration of Girls Inc. of New Hampshire supporters, donors, volunteers, and the overall success of Girls Inc. NH programs. A separate breakfast celebration will…",
-            image: IS2,
-        },
-        {
-            name: "Granite State Golf Challenge",
-            quote: "Join us on September 8, 2025, for the Girls Inc. Granite State Golf Challenge at Nashua Country Club’s Wayne Stiles golf course. Your participation supports our mission to empower underserved girls aged 5 to…",
-            image: IS3,
-        },
-    ];
     const cardsData = [
         {
           title: 'Fuel Her Fire Auction Gala',
@@ -43,7 +26,7 @@ const Events = () => {
           image: IS3,
         }
       ];
-    const sortedStories = [...impactStories];
+    const sortedStories = [...cardsData];
     if (sortOrder === "oldest") {
         sortedStories.reverse();
     }

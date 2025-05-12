@@ -4,7 +4,6 @@ import Partner from '../../images/partner.png';
 import Volunteer from '../../images/volunteer.png';
 import Advocate from '../../images/advocate.png';
 import Ambassador from '../../images/social-ambassador.png';
-import NewsletterSignup from '../newslettersignup/newslettersignup';
 
 const GetInvolved = () => {
     return (
@@ -109,9 +108,6 @@ const GetInvolved = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='container'>
-                <NewsletterSignup />
             </div>
         </>
     )

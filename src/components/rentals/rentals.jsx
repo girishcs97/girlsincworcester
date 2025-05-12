@@ -3,7 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import Img from '../../images/camp.JPG'
 import MultiPHall from '../../images/MultipurposeHall.jpg'
-import Pool from '../../images/Pool.HEIC'
+import Pool from '../../images/Pool.jpg'
+import Gym from '../../images/Gym.jpg'
+import Breakout from '../../images/BreakoutRoom.jpg'
+import Conference from '../../images/conference.jpg'
 
 const spaces = [
   {
@@ -18,7 +21,7 @@ const spaces = [
     capacity: '50 guests',
     rates: '$150 per hour',
     description: 'State-of-the-art space with modern tech. Ideal for workshops and collaborative projects.',
-    image: Img
+    image: Conference
   },
   {
     name: 'Meeting Room',
@@ -32,14 +35,14 @@ const spaces = [
     capacity: '20 guests',
     rates: '$75 per hour (min 2 hours)',
     description: 'Cozy rooms with collaborative tables and reading nooks for study or team meetings.',
-    image: Img
+    image: Breakout
   },
   {
     name: 'Gymnasium / Basketball Court',
     capacity: '40 guests',
     rates: '$85 per hour (min 2 hours)',
     description: 'Polished wooden floors for sports, fitness events, or social gatherings.',
-    image: Img
+    image: Gym
   },
   {
     name: 'Pool',
@@ -70,7 +73,7 @@ function Rentals() {
         {spaces.map((space, idx) => (
           <Col md={6} lg={4} className="mb-4" key={idx}>
             <Card className="h-100 shadow-sm">
-              <Card.Img variant="top" src={space.image} />
+              <Card.Img variant="top" src={space.image} height={'277px'}/>
               <Card.Body>
                 <Card.Title>{space.name}</Card.Title>
                 <Card.Text>

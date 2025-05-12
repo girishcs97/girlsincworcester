@@ -5,14 +5,14 @@ const LandingPage = () => {
   return (<>
     <section className="py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between" style={{ backgroundColor: '#f4f4ef' }}>
       {/* Text Section */}
-      <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '30px' }}>
+      <div className="col-lg-6 text-center text-lg-start" style={{ marginLeft: '30px',fontSize: '30px' }}>
         <span className="badge text-dark px-3 text-uppercase py-1" style={{ backgroundColor: "#eeff41" }} >
           IT STARTS WITH GIRLS
         </span>
-        <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
-          We are guided by the <br />vision of <span className="text-danger">powerful girls</span> in <br /> an equitable society.
-        </h1>
-        <br/>
+        <p className="mt-4 fw-bold" style={{ fontSize: '42px' }}>
+          We are guided by the <br /> vision of <span className="text-danger">powerful <br />girls</span> who contribute to <br />their communities in <br />meaningful ways.
+        </p>
+        <br />
         <div className="button-container">
           {/* Filled Button */}
           <button className="filled-button">

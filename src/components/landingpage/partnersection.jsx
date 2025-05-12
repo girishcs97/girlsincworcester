@@ -5,6 +5,7 @@ import Darmouth from '../../images/dartmouth.png';
 import Fidelity from '../../images/fidelity.png';
 import UnitedWay from '../../images/unitedway.png';
 import Harvard from '../../images/hardvard.png';
+import NewsletterSignup from '../newslettersignup/newslettersignup';
 
 
 function PartnersSection() {
@@ -50,6 +51,9 @@ function PartnersSection() {
           </Col>
         </Row>
       </Container>
+      <div className='container'>
+        <NewsletterSignup />
+      </div>
     </div>
   );
 }

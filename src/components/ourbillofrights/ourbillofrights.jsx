@@ -58,9 +58,9 @@ const OurBillofRights = () => {
                     <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }}>
                         Girls Inc. Girls’ Bill of Rights
                     </span>
-                    <h1 className="mt-4 fw-bold" style={{ fontSize: '36px' }}>
-                        We will always <span className="text-danger">support girls</span> and ensure that their rights are recognized and respected.
-                    </h1>
+                    <p className="mt-4 fw-bold" style={{ fontSize: '42px' }}>
+                        When girls are <span className="text-danger">recognized and <br/>respected,</span> they thrive. 
+                    </p>
                 </div>
 
                 {/* Image Section */}
@@ -80,14 +80,8 @@ const OurBillofRights = () => {
                         <span className="text-uppercase fw-bold">Who We Serve</span>
                     </div>
                     <h4 className="mb-4 fs-1 fw-bold">
-                        Girls Inc. is committed to providing the{" "}
-                        <span className="text-danger">Girls Inc. Experience</span>{" "}
-                        to those who identify as girls and those gender expansive young people
-                        who feel our pro-girl environment is the best fit for them.
+                    Through the <span className="text-danger">Girls Inc. Experience,</span> we cultivate an <br></br>environment that is pro-girl, where she is encouraged to be <br/>her authentic self and is able to develop the skills that help <br/>her reach her full potential.
                     </h4>
-                    <a href="#" className="text-danger text-decoration-none">
-                        Girls Inc. National Position Statement on Gender Identity ↗
-                    </a>
                 </section>
 
                 {/* Our Purpose Section */}
@@ -106,9 +100,9 @@ const OurBillofRights = () => {
                             With a <br />continued commitment and dedication to making a lasting <br />difference,
                             Girls Inc. is a strong advocate for girls and honors <br />the Girls Inc. Bill of Rights.
                         </p>
-                        <button className="btn btn-danger px-4 py-2 fw-bold">
+                        <a className="btn btn-danger px-4 py-2 fw-bold" href='https://live-grla-newhampshireorg.pantheonsite.io/wp-content/uploads/2024/02/Copy-of-Copy-of-Girls-Inc.-Bill-of-Rights.pdf' target='_blank'>
                             Download the Bill of Rights PDF →
-                        </button>
+                        </a>
                     </div>
 
                     {/* Image Section */}
@@ -133,8 +127,10 @@ const OurBillofRights = () => {
                             <div className="card h-100 shadow-sm hover-zoom">
                                 <img src={right.image} className="card-img-top img-fluid" style={{ height: '200px', objectFit: 'cover' }} alt={right.label} />
                                 <div className="card-body">
-                                    <h5 className="card-title" style={{color:'#eeff41'}}>{right.label}</h5>
-                                    <p className="card-text text-dark">{right.title}</p>
+                                <span className="badge text-dark px-3 py-1" style={{ backgroundColor: "#eeff41" }}>{right.label}</span>
+                                <br/>
+                    <br/>
+                                    <p className="card-text text-dark fw-bold">{right.title}</p>
                                 </div>
                             </div>
                         </div>

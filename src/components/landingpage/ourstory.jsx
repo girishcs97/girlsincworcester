@@ -24,7 +24,7 @@ const Ourstory = () => {
                             <p className="card-text">
                                 We equip girls to reach their full potential while advocating with and for them to end inequity and discrimination.
                             </p>
-                            <a href="#our-team" className="btn btn-danger">What we do &rarr;</a>
+                            <a href="#our-team" className="btn btn-danger">What We Do &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Ourstory = () => {
                             <p className="card-text">
                                 We're the longest-running girls’ leadership program, evolving with girls to meet the challenges and opportunities of the day.
                             </p>
-                            <a href="#our-financials" className="btn btn-danger">Who we are &rarr;</a>
+                            <a href="#our-financials" className="btn btn-danger">Who We Are &rarr;</a>
                         </div>
                     </div>
                 </div>
