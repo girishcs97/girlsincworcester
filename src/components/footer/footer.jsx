@@ -7,7 +7,7 @@ import Logo from '../../images/Final_logo.png';
 function FooterComponent() {
   const history = useNavigate();
   return (
-    <footer className="text-white text-center pb-2" style={{ backgroundColor: '#ED1849' }}>
+    <footer className="ext-white text-center py-2" style={{ backgroundColor: '#ED1849' }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mb-3">

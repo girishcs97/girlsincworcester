@@ -28,6 +28,7 @@ import Rentals from './components/rentals/rentals.jsx';
 import ResourcesHub from './components/resources/resources.jsx';
 import NewsPressSection from './components/news/news.jsx'
 import Careers from './components/careers/career.jsx';
+import ProgramDetail from './components/programs/programdetails.jsx';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
           <Route path='/resources' element={<ResourcesHub/>}/>
           <Route path='/news' element={<NewsPressSection/>}/>
           <Route path='/careers' element={<Careers />} />
+          <Route path="/programs/:id" element={<ProgramDetail />} />
         </Routes>
         <FooterComponent />
       </Router>
