@@ -25,7 +25,8 @@ import ChampionsForGirls from './components/champion/champion.jsx';
 import PartnershipPage from './components/partners/partners.jsx';
 import Donate from './components/donate/donate.jsx';
 import Rentals from './components/rentals/rentals.jsx';
-
+import ResourcesHub from './components/resources/resources.jsx';
+import NewsPressSection from './components/news/news.jsx'
 function App() {
   return (
     <div className="App">
@@ -54,6 +55,8 @@ function App() {
           <Route path='/becomeapartner' element={<PartnershipPage />} />
           <Route path='/donate' element={<Donate />} />
           <Route path='/rentals' element={<Rentals />} />
+          <Route path='/resources' element={<ResourcesHub/>}/>
+          <Route path='/news' element={<NewsPressSection/>}/>
         </Routes>
         <FooterComponent />
       </Router>
