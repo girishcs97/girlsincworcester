@@ -7,6 +7,8 @@ import Pool from '../../images/Pool.jpg'
 import Gym from '../../images/Gym.jpg'
 import Breakout from '../../images/BreakoutRoom.jpg'
 import Conference from '../../images/conference.jpg'
+import Meeting from '../../images/meeting.jpg'
+import './rentals.css';
 
 const spaces = [
   {
@@ -28,7 +30,7 @@ const spaces = [
     capacity: '10 guests',
     rates: '$100 per hour',
     description: 'Private space for small meetings and presentations, equipped with a smart TV.',
-    image: Img
+    image: Meeting
   },
   {
     name: 'Breakout / Individual Rooms',
@@ -63,17 +65,23 @@ const spaces = [
 function Rentals() {
   return (
     <Container className="my-5">
-      <header className="text-center mb-5">
-        <h2 className="">Host Your Next Event at Girls Inc. of Worcester</h2>
-        <p className="lead">Discover versatile spaces perfect for every occasion — parties, retreats, conferences & more!</p>
-        <a href="https://forms.office.com/r/gXfFXKJJfm" className="btn btn-primary">Reserve Now</a>
-      </header>
+      <div className="video-container">
+        <video autoPlay muted loop className="bg-video">
+          <source src="../../images/roomrent.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div className="video-overlay d-flex flex-column justify-content-center align-items-center text-center">
+          <h1 className="text-white display-4 fw-bold">Host Your Next Event at Girls Inc. of Worcester</h1>
+          <p className="text-white fs-5">Discover versatile spaces perfect for every occasion — parties, retreats, conferences & more!</p>
+          <a href="https://forms.office.com/r/gXfFXKJJfm" className="btn btn-primary">Reserve Now</a>
+        </div>
+      </div>
 
       <Row>
         {spaces.map((space, idx) => (
           <Col md={6} lg={4} className="mb-4" key={idx}>
             <Card className="h-100 shadow-sm">
-              <Card.Img variant="top" src={space.image} height={'277px'}/>
+              <Card.Img variant="top" src={space.image} height={'277px'} />
               <Card.Body>
                 <Card.Title>{space.name}</Card.Title>
                 <Card.Text>

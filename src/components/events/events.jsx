@@ -11,21 +11,26 @@ const Events = () => {
     const [sortOrder, setSortOrder] = useState("newest");
     const cardsData = [
         {
-          title: 'Fuel Her Fire Auction Gala',
-          description: 'Join Us for the 2025 Fuel Her Fire Auction Gala! The Fuel Her Fire Auction Gala, presented by Dartmouth Health Children’s, returns on Thursday, April...',
-          image: IS1,
+            title: ' Girls Celebration',
+            description: 'Join Us for the 2025 Fuel Her Fire Auction Gala! The Fuel Her Fire Auction Gala, presented by Dartmouth Health Children’s, returns on Thursday, April...',
+            image: IS1,
         },
         {
-          title: 'Champions for Girls Breakfast',
-          description: 'A Celebration of Girls Inc. of New Hampshire supporters, donors, volunteers, and the overall success of Girls Inc. NH programs. A separate breakfast celebration will...',
-          image: IS2,
+            title: 'Galentine’s Celebration',
+            description: 'A Celebration of Girls Inc. of New Hampshire supporters, donors, volunteers, and the overall success of Girls Inc. NH programs. A separate breakfast celebration will...',
+            image: IS2,
         },
         {
-          title: 'Granite State Golf Challenge',
-          description: 'Join us on September 8, 2025, for the Girls Inc. Granite State Golf Challenge at Nashua Country Club’s Wayne Stiles golf course. Your participation supports our mission to empower underserved girls aged 5 to...',
-          image: IS3,
+            title: 'Annual Meeting',
+            description: 'Join us on September 8, 2025, for the Girls Inc. Granite State Golf Challenge at Nashua Country Club’s Wayne Stiles golf course. Your participation supports our mission to empower underserved girls aged 5 to...',
+            image: IS3,
+        },
+        {
+            title: 'College & Career Shower',
+            description: 'Join us on September 8, 2025, for the Girls Inc. Granite State Golf Challenge at Nashua Country Club’s Wayne Stiles golf course. Your participation supports our mission to empower underserved girls aged 5 to...',
+            image: IS3,
         }
-      ];
+    ];
     const sortedStories = [...cardsData];
     if (sortOrder === "oldest") {
         sortedStories.reverse();
@@ -67,7 +72,7 @@ const Events = () => {
                     {cardsData.map((card, index) => (
                         <div className="col-md-4 mb-4 d-flex align-items-stretch" key={index}>
                             <div className="card shadow-sm h-100" style={{ borderRadius: '15px' }}>
-                                <img src={card.image} className="card-img-top" style={{ height: '200px', objectFit: 'cover', borderTopLeftRadius: '15px', borderTopRightRadius: '15px' ,borderTopLeftRadius: '15px', borderTopRightRadius: '15px' }} alt={card.title} />
+                                <img src={card.image} className="card-img-top" style={{ height: '200px', objectFit: 'cover', borderTopLeftRadius: '15px', borderTopRightRadius: '15px', borderTopLeftRadius: '15px', borderTopRightRadius: '15px' }} alt={card.title} />
                                 <div className="card-body">
                                     <h6 className="card-title text-danger fw-bold">{card.title}</h6>
                                     <p className="card-text text-black">{card.description}</p>

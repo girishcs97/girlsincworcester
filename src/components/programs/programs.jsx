@@ -7,10 +7,54 @@ import IS3 from '../../images/impactstories3.jpg'
 import NewsletterSignup from "../newslettersignup/newslettersignup";
 
 const programs = [
-    { name: "Fuel Her Fire Nutrition Program" },
-    { name: "BOLD Futures Mentoring" },
-    { name: "Young Women's Leadership" },
-    { name: "Mind + Body" },
+    {
+        title: "GPS",
+        image: IS1
+    },
+    {
+        title: "Girls Unified",
+        image: IS2
+    },
+    {
+        title: "Youth Connect",
+        image: IS3
+    },
+    {
+        title: "After School",
+        image: IS1
+    },
+    {
+        title: "Basketball League",
+        image: IS1
+    },
+    {
+        title: "Swim Lessons",
+        image: IS1
+    },
+    {
+        title: "Summer Camp",
+        image: IS1
+    },
+    {
+        title: "Vacation Week",
+        image: IS1
+    },
+    {
+        title: "Eureka! Worcester",
+        image: IS1
+    },
+    {
+        title: "Eureka! JV Worcester",
+        image: IS1
+    },
+    {
+        title: "Eureka! Metrowest",
+        image: IS1
+    },
+    {
+        title: "Wellness & Equity",
+        image: IS1
+    },
 ];
 
 const Programs = () => {
@@ -41,7 +85,7 @@ const Programs = () => {
         <>
             <div className="container-fluid bg-light p-5 d-flex align-items-center justify-content-between">
                 <div className="text-start">
-                    <span className="badge bg-warning text-dark mb-2">Programs</span>
+                    <span className="badge text-dark mb-2" style={{backgroundColor:'#eeff41'}}>Programs</span>
                     <h1 className="fw-bold">
                         Research-based informal education programs that encourage girls to take risks and master physical, intellectual and emotional challenges.
                     </h1>
@@ -55,57 +99,33 @@ const Programs = () => {
                     />
                 </div>
             </div>
-            <div className="container text-center mt-5">
-                <h2 className="fw-bold">
-                    On any given day in various cities across the state,{" "}
-                    <span className="text-danger">Girls Inc. of Worcester</span> is implementing a rich variety of programming.
-                </h2>
-                <p className="fs-5">
-                    Girls Inc. operates two year-round centers in Nashua and Manchester, providing afterschool, summer camp, and vacation week programming.
-                </p>
-
-                <div className="d-flex justify-content-center flex-wrap gap-3 mt-4">
-                    <button className="btn btn-danger text-white px-4 py-2 fw-bold rounded-pill">
-                        Research-Based Programs
-                    </button>
+            <div className="container py-5">
+                <h4 className="text-center mb-4">
+                    <span className="badge text-dark px-4 py-2" style={{backgroundColor:'#eeff41'}}>OUR PROGRAMS</span>
+                </h4>
+                <div className="row justify-content-center mt-2">
                     {programs.map((program, index) => (
-                        <button key={index} className="btn btn-outline-danger px-4 py-2 fw-bold rounded-pill">
-                            {program.name}
-                        </button>
-                    ))}
-                </div>
-
-                <p className="mt-4 fs-7">
-                    Centers offer a variety of{" "}
-                    <span className="text-danger fw-bold">Girls Inc. research-based programs</span> on topics such as math and science education, pregnancy and drug abuse prevention, media literacy, economic literacy, adolescent health, violence prevention, careers and leadership, and sports participation.
-                </p>
-            </div>
-            <div className="container text-center mt-5">
-                <h2 className="fw-bold">Impact Stories</h2>
-
-                <div className="mb-3">
-                    <label className="fw-bold">Filter By Published Date</label>
-                    <select className="form-select w-auto d-inline-block ms-2" onChange={(e) => setSortOrder(e.target.value)}>
-                        <option value="newest">Newest To Oldest</option>
-                        <option value="oldest">Oldest To Newest</option>
-                    </select>
-                </div>
-
-                <div className="row mt-4">
-                    {sortedStories.map((story, index) => (
-                        <div className="col-md-4" key={index}>
-                            <div className="card shadow-sm border-0 rounded">
-                                <img src={story.image} alt={story.name} className="card-img-top rounded-top" />
+                        <div className="col-md-4 mb-4 d-flex align-items-stretch" key={index}>
+                            <div className="card shadow rounded-4 border-0 text-center">
+                                <img
+                                    src={program.image}
+                                    className="card-img-top rounded-top-4"
+                                    alt={program.title}
+                                    style={{ height: "250px", objectFit: "cover" }}
+                                />
                                 <div className="card-body">
-                                    <h5 className="text-danger">{story.name}</h5>
-                                    <p className="text-muted">"{story.quote}"</p>
+                                    <h5 className="card-title fw-bold">{program.title}</h5>
+                                    <br/>
+                                    <a href="#" className="btn btn-danger rounded-pill px-4">
+                                        Learn more. <span>&rarr;</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <NewsletterSignup/>
+            <div className="container"> <NewsletterSignup /></div>
         </>
     );
 };

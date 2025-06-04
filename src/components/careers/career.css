@@ -1,0 +1,30 @@
+.careers-section {
+    background-color: #fff;
+}
+
+.apply-btn {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+}
+
+.career-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+}
+
+.career-card img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.text-justify {
+    text-align: justify;
+}

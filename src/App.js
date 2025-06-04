@@ -27,6 +27,8 @@ import Donate from './components/donate/donate.jsx';
 import Rentals from './components/rentals/rentals.jsx';
 import ResourcesHub from './components/resources/resources.jsx';
 import NewsPressSection from './components/news/news.jsx'
+import Careers from './components/careers/career.jsx';
+
 function App() {
   return (
     <div className="App">
@@ -57,6 +59,7 @@ function App() {
           <Route path='/rentals' element={<Rentals />} />
           <Route path='/resources' element={<ResourcesHub/>}/>
           <Route path='/news' element={<NewsPressSection/>}/>
+          <Route path='/careers' element={<Careers />} />
         </Routes>
         <FooterComponent />
       </Router>

@@ -1,10 +1,13 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../../images/Final_logo.png';
 
+
 function FooterComponent() {
+  const history = useNavigate();
   return (
-    <footer className="ext-white text-center py-4" style={{ backgroundColor: '#ED1849' }}>
+    <footer className="text-white text-center pb-2" style={{ backgroundColor: '#ED1849' }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mb-3">
@@ -25,7 +28,7 @@ function FooterComponent() {
             <ul className="list-unstyled">
               <li><a href="#" className="text-white text-decoration-none" style={{color:'#fff',fontSize:'16px',fontFamily:'Lato, sans-serif',fontWeight:'bold'}}>Contact Us</a></li>
               <br />
-              <li><a href="#" className="text-white text-decoration-none" style={{color:'#fff',fontSize:'16px',fontFamily:'Lato, sans-serif',fontWeight:'bold'}}>Careers</a></li>
+              <li><a onClick={() => { history("/careers") }} className="text-white text-decoration-none" style={{color:'#fff',fontSize:'16px',fontFamily:'Lato, sans-serif',fontWeight:'bold',cursor:'pointer'}}>Careers</a></li>
             </ul>
           </div>
 
